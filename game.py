@@ -11,4 +11,17 @@ BLUE = (20, 20, 240)
 YELLOW = (240, 240, 20)
 
 class Spot:
-  pass
+  def __init__(self, row, col, size):
+    self.row = row
+    self.col = col
+    self.size = size
+    self.color = GREY
+    self.x = self.col * self.size
+    self.y = self.row * self.size
+    self.isMine = False
+    self.reveled = False
+    self.isTagged = False
+    self.images = None
+    self.neighbours = 0
+    self.isDetonated = False
+
