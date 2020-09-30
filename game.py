@@ -74,5 +74,23 @@ class Spot:
 
   def is_detonated(self):
     return self.isDetonated
+  
+  def draw(self, win, imgs):
+
+    if not self.is_reveled():
+      if self.is_tagged():
+        win.blit(imgs[11], (self.x, self.y))
+      else:
+        win.blit(imgs[10], (self.x, self.y))
+
+    else:
+      if self.is_mine():
+        if self.is_detonated():
+          win.blit(imgs[12], (self.x, self.y))
+        else:
+          win.blit(imgs[9], (self.x, self.y))
+      else:
+        win.blit(imgs[self.neighbours], (self.x, self.y))
+
 
    
