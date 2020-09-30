@@ -8,6 +8,7 @@ GREY_LINE = (100, 100, 100)
 RED = (240, 20, 20)
 GREEN = (20, 240, 20)
 BLUE = (20, 20, 240)
+BLACK1 = (51, 51, 51)
 YELLOW = (240, 240, 20)
 
 class Spot:
