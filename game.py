@@ -9,3 +9,6 @@ RED = (240, 20, 20)
 GREEN = (20, 240, 20)
 BLUE = (20, 20, 240)
 YELLOW = (240, 240, 20)
+
+class Spot:
+  pass
